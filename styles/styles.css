@@ -1,0 +1,211 @@
+
+/* HEADER */
+
+
+HEADER {
+  padding-block: 5px;
+  background-color: hsl(165, 94%, 31%);
+}
+
+header nav ul {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+}
+
+header nav ul li {
+  color: rgb(255, 255, 255);
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/* FOOTER  */
+
+
+
+
+FOOTER {
+  background-color: hsl(165, 94%, 31%);
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav {
+  text-align: center;
+  display: inline;
+}
+
+footer nav ul {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  list-style: none;
+}
+
+footer nav ul li {
+  margin-left: 2px;
+
+  color: rgb(255, 255, 255);
+  display: inline;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+/* BODY  */
+
+h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  color: hsl(165, 94%, 31%);
+}
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  color: hsl(165, 94%, 31%);
+}
+h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  color: hsl(0, 0%, 21%);
+}
+h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  color: hsl(0, 0%, 29%);
+}
+h5 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: medium;
+  color: hsl(0, 0%, 38%);
+}
+
+h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: small;
+  color: hsl(172, 94%, 19%);
+  text-decoration: underline;
+}
+
+
+
+
+
+
+a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  color: hsl(165, 84%, 24%);
+  text-decoration: none;
+}
+label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: medium;
+  color: hsl(165, 84%, 24%);
+  text-decoration: none;
+}
+
+.titulo {
+  height: 5%;
+  margin-bottom: 0;
+}
+
+.columnader form input {
+  margin-right: 35px;
+}
+
+.carrito {
+  display: grid;
+  grid: 150px / 75% 25%;
+}
+.carritoder {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid: auto / 45% 45%;
+}
+.carritoizq {
+  grid-column: 1 / span 1;
+  display: grid;
+  grid: auto / 20% 45% 35%;
+}
+#nosotros {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+#nosotros img {
+  max-width: 95%;
+}
+.carritofotos {
+  grid-column: 1 / span 1;
+}
+
+.carritodescripcion {
+  grid-column: 2 / span 1;
+}
+.carritoprecio {
+  text-align: left;
+  grid-column: 3 / span 1;
+  margin-right: 15px;
+}
+
+.carritofotos img {
+  height: 165px;
+  margin: 10px;
+}
+#prod {
+  height: 540px;
+  margin-top: 30px;
+  margin-left: 0;
+}
+
+.carritoder h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  color: hsl(165, 94%, 31%);
+}
+
+.sumader {
+  grid-column: 2 / span 1;
+  text-align: right;
+}
+.sumaizq {
+  grid-column: 1 / span 1;
+  text-align: left;
+}
+
+.tienda {
+  display: grid;
+  grid: auto / 80% 20%;
+}
+
+.productos {
+  grid-column: 1 / span 1;
+}
+
+.filtrostienda {
+  grid-column: 2 / span 1;
+  text-align: left;
+}
