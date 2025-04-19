@@ -2,5 +2,73 @@ header {
   background-color: hsl(165, 94%, 31%);
   padding: 5px;
 }
+header nav ul {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+}
+header nav ul li {
+  color: hsl(60, 71%, 99%);
+}
+header nav ul li a {
+  text-decoration: none;
+  color: hsl(60, 71%, 99%);
+}
+
+.tarjeta-producto {
+  height: 65vh;
+  background-color: hsl(60, 71%, 99%);
+  justify-content: space-between;
+}
+.tarjeta-producto div div a {
+  text-decoration: none;
+  color: gray;
+  font-size: medium;
+  text-align: center;
+}
+.tarjeta-producto div div p {
+  color: hsl(165, 94%, 31%);
+  font-size: xx-large;
+  text-align: center;
+}
+.tarjeta-producto img {
+  height: 46vh;
+  width: max-content;
+  border-radius: 10px;
+}
+.tarjeta-producto h3 {
+  color: hsl(0, 0%, 16%);
+  font-size: large;
+  text-align: center;
+}
+.tarjeta-producto p {
+  color: hsl(0, 0%, 16%);
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: hsl(165, 94%, 31%);
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
+}
+footer nav {
+  text-align: center;
+  display: inline;
+}
+footer nav ul {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  list-style: none;
+}
+footer nav ul li {
+  margin-left: 2px;
+  display: inline;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: hsl(60, 71%, 99%);
+}
 
 /*# sourceMappingURL=styles.css.map */
