@@ -30,7 +30,7 @@ header nav ul li a {
   text-align: center;
 }
 .tarjeta-producto div div p .antes {
-  color: hsl(0, 0%, 44%);
+  color: hsl(0, 0%, 56%);
   text-decoration: line-through;
   font-size: large;
 }
@@ -49,6 +49,37 @@ header nav ul li a {
   font-size: medium;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.prod-grande, .prod-miniatura {
+  padding: 5px;
+}
+.prod-grande img, .prod-miniatura img {
+  height: auto;
+  width: 95%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.prod-miniatura {
+  justify-content: space-between;
+  margin: 0;
+}
+.prod-miniatura img {
+  width: 95%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.descripcion {
+  padding: 5px;
+  color: hsl(0, 0%, 56%);
+}
+.descripcion h2 {
+  color: hsl(165, 94%, 31%);
+  font-size: 3em;
+  text-align: left;
+  text-shadow: 1px 1px 1px hsl(0, 0%, 56%);
 }
 
 .clientes {
@@ -71,10 +102,8 @@ header nav ul li a {
 }
 
 h3 {
-  color: hsl(165, 94%, 31%);
+  color: hsl(0, 0%, 56%);
   font-size: x-large;
-  text-align: center;
-  text-shadow: 1px 1px 2px hsl(0, 0%, 16%);
 }
 
 h4 {
@@ -133,7 +162,8 @@ footer nav ul li a {
     margin-top: 2rem;
     text-align: center;
   }
-  .filtros h2, .filtros h4 {
+  .filtros h2,
+  .filtros h4 {
     font-size: 1rem;
   }
   .filtros input {

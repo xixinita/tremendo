@@ -1,174 +1,191 @@
-@import 'utilidades/variables';
+@import "utilidades/variables";
+
+
+
+
+
+
+
 
 // ..........header..........
 
+header {
+  background-color: $verde-tremendo;
+  padding: 5px;
 
-header{
-    background-color:$verde-tremendo;
-    padding: 5px;
+  nav {
+    ul {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: large;
 
-    nav{
-        ul{
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          font-size: large;
-    
-          li{
-            color: $blanquito;
-    
-            a{
-                text-decoration: none;
-                color: $blanquito;
+      li {
+        color: $blanquito;
 
-            }
-          }
+        a {
+          text-decoration: none;
+          color: $blanquito;
         }
       }
-    
     }
-    
-
-
-    // .......... main ..........
-
-    .tarjeta-producto{
-       
-        background-color: $blanquito;
-        text-align: center;  
-        div{
-            div{
-                a{ 
-                    text-decoration: none;
-                    color: gray;
-                    font-size: medium; 
-                 
-                    text-align: center;
-                }
-                p{
-                  .antes{
-                    color: $gris-clarito;
-                    text-decoration: line-through;  
-                    font-size: large;      
-                  }
-
-                  color: $verde-tremendo;
-                    font-size: xx-large;
-                    text-align: center;
-                }
-
-            }
-            
-        }
-        img{
-            height:auto;
-            width:max-content;
-            border-radius: 10px;
-
-        
-        }
-
-        h3{
-            color:$gris-oscuro;
-            font-size: large;
-            text-align: center;
-        }
-
-        p{
-            color:$gris-oscuro;
-            font-size: medium;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-    }  
- .clientes{
-    padding-left: 2px;
-    padding-right: 2px;
- }
-.titulo{
-    font-size: x-large;
-    color: $verde-tremendo;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-margin-top: 10px;
-margin-left: 20px;
+  }
 }
-.filtros{
-    text-align: right;
+
+// .......... main ..........
+
+.tarjeta-producto {
+  background-color: $blanquito;
+  text-align: center;
+  div {
+    div {
+      a {
+        text-decoration: none;
+        color: gray;
+        font-size: medium;
+
+        text-align: center;
+      }
+      p {
+        .antes {
+          color: $gris-clarito;
+          text-decoration: line-through;
+          font-size: large;
+        }
+
+        color: $verde-tremendo;
+        font-size: xx-large;
+        text-align: center;
+      }
+    }
+  }
+  img {
+    height: auto;
+    width: max-content;
+    border-radius: 10px;
+  }
+
+  h3 {
     color: $gris-oscuro;
-    font-weight: lighter;
-}
-h3{
-    color:$verde-tremendo;
-    font-size:x-large;
+    font-size: large;
     text-align: center;
-    text-shadow: 1px 1px 2px $gris-oscuro;
+  }
+
+  p {
+    color: $gris-oscuro;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
-h4{
-    color:$gris-oscuro;
-    font-size: large;
+
+.prod-grande {
+  padding: 5px;
+  
+  img {
+    height: auto;
+    width: 95%;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+.prod-miniatura {
+  @extend .prod-grande;
+  justify-content: space-between;
+  margin: 0;
+  img {
+  width: 95%;
+    height: auto;
+    border-radius: 5px;
+  }
+}
+.descripcion {
+  
+  padding: 5px;
+  color: $gris-clarito;
+  h2{
+    color: $verde-tremendo;
+        font-size: 3em;
+        text-align: left;
+        text-shadow: 1px 1px 1px $gris-clarito;
+
+  }
+}
+
+.clientes {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.titulo {
+  font-size: x-large;
+  color: $verde-tremendo;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.filtros {
+  text-align: right;
+  color: $gris-oscuro;
+  font-weight: lighter;
+}
+h3 {
+  color: $gris-clarito;
+  font-size: x-large;
  
-    
+  
 }
-h5{
-    color:$gris-oscuro;
-    font-size:medium;
-   
+h4 {
+  color: $gris-oscuro;
+  font-size: large;
 }
-h6{
-    color:$gris-oscuro;
-    font-size: small;
-   
+h5 {
+  color: $gris-oscuro;
+  font-size: medium;
 }
-h3{
-    color:$gris-oscuro;
-    font-size: large;
-    
+h6 {
+  color: $gris-oscuro;
+  font-size: small;
+}
+h3 {
+  color: $gris-oscuro;
+  font-size: large;
 }
 
+// .......... footer .........
 
+footer {
+  background-color: hsl(165, 94%, 31%);
+  padding: 1px;
+  bottom: 0;
+  width: 100%;
 
+  nav {
+    text-align: center;
+    display: inline;
 
+    ul {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      font-size: large;
 
+      list-style: none;
 
+      li {
+        margin-left: 2px;
 
+        display: inline;
 
-    // .......... footer .........
-
-    footer{
-        background-color: hsl(165, 94%, 31%);
-        padding: 1px;
-        bottom: 0;
-        width: 100%;
-
-        nav{
-            text-align: center;
-            display: inline;
-
-            ul{
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-size: large;
-
-                list-style: none;
-
-                li{
-                    margin-left: 2px;
-                    
-                    display: inline;
-
-                    a{
-                        text-decoration: none;
-                        color: $blanquito;
-                    }
-                }
-
-
-            };
+        a {
+          text-decoration: none;
+          color: $blanquito;
         }
-
+      }
     }
+  }
+}
 
-
-
-
-    
 // Media queries
 @media (max-width: 576px) {
   .tarjeta-producto {
@@ -184,7 +201,8 @@ h3{
     margin-top: 2rem;
     text-align: center;
 
-    h2, h4 {
+    h2,
+    h4 {
       font-size: 1rem;
     }
 
