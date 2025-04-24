@@ -29,6 +29,11 @@ header nav ul li a {
   font-size: xx-large;
   text-align: center;
 }
+.tarjeta-producto div div p .antes {
+  color: hsl(0, 0%, 44%);
+  text-decoration: line-through;
+  font-size: large;
+}
 .tarjeta-producto img {
   height: auto;
   width: max-content;

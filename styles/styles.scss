@@ -44,10 +44,17 @@ header{
                     text-align: center;
                 }
                 p{
-                    color: $verde-tremendo;
+                  .antes{
+                    color: $gris-clarito;
+                    text-decoration: line-through;  
+                    font-size: large;      
+                  }
+
+                  color: $verde-tremendo;
                     font-size: xx-large;
                     text-align: center;
                 }
+
             }
             
         }
