@@ -31,7 +31,7 @@ header{
     // .......... main ..........
 
     .tarjeta-producto{
-        height: 65vh;
+       
         background-color: $blanquito;
         text-align: center;  
         div{
@@ -157,3 +157,70 @@ h3{
         }
 
     }
+
+
+
+
+    
+// Media queries
+@media (max-width: 576px) {
+  .tarjeta-producto {
+    height: 30vh;
+    margin-bottom: 1rem;
+
+    .card {
+      text-align: center;
+    }
+  }
+
+  .filtros {
+    margin-top: 2rem;
+    text-align: center;
+
+    h2, h4 {
+      font-size: 1rem;
+    }
+
+    input {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .tarjeta-producto {
+    height: 55vh;
+    margin-bottom: 1.5rem;
+  }
+
+  .filtros {
+    margin-top: 3rem;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .tarjeta-producto {
+    height: 65vh;
+    margin-bottom: 2rem;
+  }
+
+  .filtros {
+    margin-top: 5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+}

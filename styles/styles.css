@@ -15,7 +15,6 @@ header nav ul li a {
 }
 
 .tarjeta-producto {
-  height: 65vh;
   background-color: hsl(60, 71%, 99%);
   text-align: center;
 }
@@ -115,6 +114,56 @@ footer nav ul li {
 footer nav ul li a {
   text-decoration: none;
   color: hsl(60, 71%, 99%);
+}
+
+@media (max-width: 576px) {
+  .tarjeta-producto {
+    height: 30vh;
+    margin-bottom: 1rem;
+  }
+  .tarjeta-producto .card {
+    text-align: center;
+  }
+  .filtros {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .filtros h2, .filtros h4 {
+    font-size: 1rem;
+  }
+  .filtros input {
+    margin: 0.5rem 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .tarjeta-producto {
+    height: 55vh;
+    margin-bottom: 1.5rem;
+  }
+  .filtros {
+    margin-top: 3rem;
+  }
+  .filtros h2 {
+    font-size: 1.2rem;
+  }
+  .filtros h4 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 769px) {
+  .tarjeta-producto {
+    height: 65vh;
+    margin-bottom: 2rem;
+  }
+  .filtros {
+    margin-top: 5rem;
+  }
+  .filtros h2 {
+    font-size: 1.5rem;
+  }
+  .filtros h4 {
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
