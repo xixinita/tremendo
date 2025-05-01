@@ -22,84 +22,106 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-
-      <nav class=" d-flex align-items-center justify-content-around ">
-        <nav class="col-3 mt-3"> 
-          <img class="img-fluid"
-          src="./imgs/logo-tremendo.png"
-          alt="Logotipo de Tremendo!"
-          >  
-        </nav>
-        <nav  class="col-8  mt-3"> 
-          <input  class="form-control  rounded"
-          />
-        </nav>
-        
-      </nav>
-      <nav >
-        <ul class="nav mt-4 justify-content-around mb-3">
-          <li  class="mx-3 nav-item">
-            <a href="./index.html"><b>HOME</b></a>
-          </li>
-          <li  class="mx-3 nav-item"><a href="./pages/tienda.html">PRODUCTOS</a></li>
-          <li  class="mx-3 nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
-          <li  class="mx-3 nav-item"><a href="./pages/promociones.html">PROMOCIONES</a></li>
-          <li  class="mx-3 nav-item" ><a href="./pages/contacto.html">CONTACTO</a></li>
+      <div class="d-flex row align-items-center justify-content-around">
+        <div class="col-md-1 col-sm-2 mx-auto mt-3">
+          <img class="isotipo" src="./imgs/isotipo.png" alt="Isotipo de Tremendo!">
+        </div>
+        <div class="col-md-3 col-sm-8 mt-3 mx-auto">
+          <h1 class="text-center logotipo">TREMENDO!</h1>
+        </div>
+        <div class="col-md-7 col-sm-11 mt-3 mx-auto">
+          <input class="form-control rounded" />
+        </div>
+      </div>
+    
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">
+        ☰
+      </button>
+    
+      <!-- Menú -->
+      <nav class="menu">
+        <ul class="nav mt-2 justify-content-around mb-3">
+          <li class="mx-3 nav-item"><a href="./index.html"><b>HOME</b></a></li>
+          <li class="mx-3 nav-item"><a href="./pages/tienda.html">PRODUCTOS</a></li>
+          <li class="mx-3 nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
+          <li class="mx-3 nav-item"><a href="./pages/promociones.html">PROMOCIONES</a></li>
+          <li class="mx-3 nav-item"><a href="./pages/contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
-
     </header>
 
     <main>
 
       
       <div class=" mt-4">
-        <img
-          src="./imgs/banner1.png"
-          alt="banner con promociones"
-          class="img-fluid"
-              />
+        <div id="banner" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#banner" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#banner" data-bs-slide-to="1"></li>
+            <li data-bs-target="#banner" data-bs-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./imgs/banner1.png" alt="Libre juego">
+            </div>
+        
+            <div class="carousel-item">
+              <img src="./imgs/banner2.png" alt="Kit sensorial">
+            </div>
+        
+            <div class="carousel-item">
+              <img src="./imgs/banner3.png" alt="Muñeca de colores">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#banner" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#banner" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+
+        </div>
       </div>
 
       <div class="container d-block my-4 ">
               
         <div class="row mt-5">
           
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0 ">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
-                <img src="./imgs/tienda9.png" 
-                alt="producto en venta" 
-                class="card-img-top">
+                <img src="./imgs/tienda9.png" alt="cámara interactiva para dibujar a mano las fotos" class="card-img-top mt-3">
+                
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
-                  <h5 class="card-title">
-                    Cámara "a mano alzada"
-                  </h5>
+                  <h5 class="card-title">Cámara "a mano alzada"</h5>
                 </a>
                 <p class="card-text">
-                  <strong>$9999</strong>
+                  <strong>$15000</strong>
                 </p>
               </div>
             </div>
           </div>
   
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda2.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top  mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -114,12 +136,12 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda3.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top  mt-3" >
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -134,12 +156,12 @@
             </div>
           </div>
   
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda4.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top  mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -159,12 +181,12 @@
 
         <div class="row mt-5">
           
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda5.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top  mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -179,12 +201,12 @@
             </div>
           </div>
   
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6  mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda6.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top  mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -199,12 +221,12 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda7.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -219,12 +241,12 @@
             </div>
           </div>
    
-          <div class="col-md-3 col-sm-6 mb-6 tarjeta-producto">
-            <div class="card h-100 border-0">
+          <div class="col-md-3 col-sm-6  mb-1 tarjeta-producto">
+            <div class="card h-80 border-0">
               <a href="./pages/producto.html">
                 <img src="./imgs/tienda1.png" 
                 alt="producto en venta" 
-                class="card-img-top">
+                class="card-img-top mt-3">
               </a>
               <div class="card-body">
                 <a href="./pages/producto.html">
@@ -251,7 +273,7 @@
 
         <div class="row mt-3">
           
-          <div class=" col-lg-3 col-sm-6 mb-4 pad">
+          <div class=" col-lg-3 col-sm-6 mb-4 ">
             <img
             class="clientes"
               src="./imgs/cliente1a.png"
@@ -296,5 +318,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="./scripts/menu.js"></script>
   </body>
 </html>

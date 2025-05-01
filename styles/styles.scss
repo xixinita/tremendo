@@ -11,14 +11,15 @@
 
 header {
   background-color: $verde-tremendo;
-  padding: 5px;
-
+  padding: 10px;
+  position: relative;
   nav {
+    
     ul {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      font-size: large;
+      font-family: "Hubballi", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2em;
 
       li {
         color: $blanquito;
@@ -31,9 +32,67 @@ header {
     }
   }
 }
+.menu {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0 10px;
+
+      a {
+        text-decoration: none;
+        color: $blanquito;
+
+        &:hover {
+          color: $gris-clarito;
+        }
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: $blanquito;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.isotipo{
+  
+  width:85%;
+  display: block;
+  
+   
+}
+.logotipo {
+  font-size: 4rem ;
+  color: $blanquito;
+  font-family: "Sour Gmmy", sans-serif;
+
+  font-weight:600;
+  font-style: normal;
+
+  text-shadow: 3px 3px 1px $gris;
+
+}
 
 // .......... main ..........
-
+.carousel-indicators {
+  list-style: none; /* Elimina los números de la lista */
+  padding: 0; /* Elimina el espacio adicional */
+  margin: 0; /* Ajusta el margen */
+}
 .tarjeta-producto {
   background-color: $blanquito;
   text-align: center;
@@ -79,6 +138,18 @@ header {
   }
 }
 
+
+
+.tarjeta-producto:hover {
+  border-radius: 10px;;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+  border: 5px solid $verde-tremendo; /* Borde de color */
+  transition: all 0.4s ease-in-out; /* Transición suave */
+}
+
+
+
+
 .prod-grande {
   padding: 5px;
   
@@ -117,10 +188,14 @@ header {
   padding-right: 2px;
 }
 .titulo {
-  font-size: x-large;
-  color: $verde-tremendo;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3em;
+  color: $blanquito;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -188,6 +263,35 @@ footer {
 
 // Media queries
 @media (max-width: 576px) {
+  header {
+    .menu {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      align-items: center;
+      background-color: $verde-tremendo;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      ul {
+        flex-direction: column;
+
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .menu-toggle {
+      display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .menu.active {
+      display: flex; /* Muestra el menú cuando está activo */
+    }
+  }
   .tarjeta-producto {
     height: 30vh;
     margin-bottom: 1rem;
@@ -213,6 +317,36 @@ footer {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+
+  header {
+    .menu {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      align-items: center;
+      background-color: $verde-tremendo;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      ul {
+        flex-direction: column;
+
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .menu-toggle {
+      display: block; /* Muestra el botón hamburguesa */
+    }
+
+    .menu.active {
+      display: flex; /* Muestra el menú cuando está activo */
+    }
+  }
   .tarjeta-producto {
     height: 55vh;
     margin-bottom: 1.5rem;
