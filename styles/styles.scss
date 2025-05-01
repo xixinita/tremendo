@@ -78,7 +78,7 @@ header {
 .logotipo {
   font-size: 4rem ;
   color: $blanquito;
-  font-family: "Sour Gmmy", sans-serif;
+  font-family: "Sour Gummy", sans-serif;
 
   font-weight:600;
   font-style: normal;
@@ -141,10 +141,9 @@ header {
 
 
 .tarjeta-producto:hover {
-  border-radius: 10px;;
+  border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
-  border: 5px solid $verde-tremendo; /* Borde de color */
-  transition: all 0.4s ease-in-out; /* Transición suave */
+  transition: all 0.4s ease-in-out;
 }
 
 
@@ -231,30 +230,29 @@ h3 {
 
 footer {
   background-color: hsl(165, 94%, 31%);
-  padding: 1px;
+  padding: 1rem;
   bottom: 0;
   width: 100%;
+  text-align: center;
 
   nav {
-    text-align: center;
-    display: inline;
-
     ul {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
-      font-size: large;
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       list-style: none;
+      padding: 0;
 
       li {
-        margin-left: 2px;
-
-        display: inline;
+        margin: 0.5rem;
 
         a {
           text-decoration: none;
           color: $blanquito;
+
+          &:hover {
+            color: $gris-clarito;
+          }
         }
       }
     }
@@ -264,6 +262,23 @@ footer {
 // Media queries
 @media (max-width: 576px) {
   header {
+    display: flex; /* Flexbox para organizar los elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espaciado uniforme */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    padding: 0 1rem; /* Espaciado lateral */
+
+    .isotipo{
+      max-width: 50px;
+      flex-shrink: 0;
+
+    }
+    .logotipo {
+      font-size: 3rem; /* Ajusta el tamaño del logotipo */
+      text-align: center;
+      flex-grow: 1; /* Permite que el logotipo ocupe el espacio disponible */
+      margin: 0 1rem; /* Espaciado lateral para evitar que toque otros elementos */
+   }
     .menu {
       display: none; /* Oculta el menú por defecto */
       flex-direction: column;
@@ -286,6 +301,8 @@ footer {
 
     .menu-toggle {
       display: block; /* Muestra el botón hamburguesa */
+      font-size: 1.8rem; /* Ajusta el tamaño del ícono */
+      flex-shrink: 0; /* Evita que el botón se reduzca demasiado */
     }
 
     .menu.active {
@@ -319,6 +336,9 @@ footer {
 @media (min-width: 577px) and (max-width: 768px) {
 
   header {
+    .logotipo {
+      font-size: 3rem;
+    }
     .menu {
       display: none; /* Oculta el menú por defecto */
       flex-direction: column;
@@ -352,6 +372,8 @@ footer {
     margin-bottom: 1.5rem;
   }
 
+  
+}
   .filtros {
     margin-top: 3rem;
 
@@ -363,14 +385,20 @@ footer {
       font-size: 1rem;
     }
   }
-}
+  footer {
+    padding: 2rem;
+    nav ul {
+      justify-content: space-between;
+    }
+  }
+
+
 
 @media (min-width: 769px) {
   .tarjeta-producto {
     height: 65vh;
     margin-bottom: 2rem;
   }
-
   .filtros {
     margin-top: 5rem;
 
@@ -380,6 +408,12 @@ footer {
 
     h4 {
       font-size: 1.2rem;
+    }
+  }
+  footer {
+    padding: 3rem;
+    nav ul {
+      justify-content: space-around;
     }
   }
 }

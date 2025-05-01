@@ -58,7 +58,7 @@ header nav ul li a {
 .logotipo {
   font-size: 4rem;
   color: hsl(60, 71%, 99%);
-  font-family: "Sour Gmmy", sans-serif;
+  font-family: "Sour Gummy", sans-serif;
   font-weight: 600;
   font-style: normal;
   text-shadow: 3px 3px 1px hsl(206, 10%, 32%);
@@ -110,8 +110,7 @@ header nav ul li a {
 .tarjeta-producto:hover {
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
-  border: 5px solid hsl(165, 85%, 38%); /* Borde de color */
-  transition: all 0.4s ease-in-out; /* Transición suave */
+  transition: all 0.4s ease-in-out;
 }
 
 .prod-grande, .prod-miniatura {
@@ -195,29 +194,47 @@ h3 {
 
 footer {
   background-color: hsl(165, 94%, 31%);
-  padding: 1px;
+  padding: 1rem;
   bottom: 0;
   width: 100%;
-}
-footer nav {
   text-align: center;
-  display: inline;
 }
 footer nav ul {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
+  padding: 0;
 }
 footer nav ul li {
-  margin-left: 2px;
-  display: inline;
+  margin: 0.5rem;
 }
 footer nav ul li a {
   text-decoration: none;
   color: hsl(60, 71%, 99%);
 }
+footer nav ul li a:hover {
+  color: hsl(0, 0%, 56%);
+}
 
 @media (max-width: 576px) {
+  header {
+    display: flex; /* Flexbox para organizar los elementos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Espaciado uniforme */
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+    padding: 0 1rem; /* Espaciado lateral */
+  }
+  header .isotipo {
+    max-width: 50px;
+    flex-shrink: 0;
+  }
+  header .logotipo {
+    font-size: 3rem; /* Ajusta el tamaño del logotipo */
+    text-align: center;
+    flex-grow: 1; /* Permite que el logotipo ocupe el espacio disponible */
+    margin: 0 1rem; /* Espaciado lateral para evitar que toque otros elementos */
+  }
   header .menu {
     display: none; /* Oculta el menú por defecto */
     flex-direction: column;
@@ -237,6 +254,8 @@ footer nav ul li a {
   }
   header .menu-toggle {
     display: block; /* Muestra el botón hamburguesa */
+    font-size: 1.8rem; /* Ajusta el tamaño del ícono */
+    flex-shrink: 0; /* Evita que el botón se reduzca demasiado */
   }
   header .menu.active {
     display: flex; /* Muestra el menú cuando está activo */
@@ -261,6 +280,9 @@ footer nav ul li a {
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
+  header .logotipo {
+    font-size: 3rem;
+  }
   header .menu {
     display: none; /* Oculta el menú por defecto */
     flex-direction: column;
@@ -288,16 +310,24 @@ footer nav ul li a {
     height: 55vh;
     margin-bottom: 1.5rem;
   }
-  .filtros {
-    margin-top: 3rem;
-  }
-  .filtros h2 {
-    font-size: 1.2rem;
-  }
-  .filtros h4 {
-    font-size: 1rem;
-  }
 }
+.filtros {
+  margin-top: 3rem;
+}
+.filtros h2 {
+  font-size: 1.2rem;
+}
+.filtros h4 {
+  font-size: 1rem;
+}
+
+footer {
+  padding: 2rem;
+}
+footer nav ul {
+  justify-content: space-between;
+}
+
 @media (min-width: 769px) {
   .tarjeta-producto {
     height: 65vh;
@@ -311,6 +341,12 @@ footer nav ul li a {
   }
   .filtros h4 {
     font-size: 1.2rem;
+  }
+  footer {
+    padding: 3rem;
+  }
+  footer nav ul {
+    justify-content: space-around;
   }
 }
 
