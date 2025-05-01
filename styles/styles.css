@@ -64,6 +64,19 @@ header nav ul li a {
   text-shadow: 3px 3px 1px hsl(206, 10%, 32%);
 }
 
+.form-control {
+  box-shadow: 3px 3px 1px hsl(206, 10%, 32%); /* Sombra suave */
+  border: 1px solid hsl(0, 0%, 56%); /* Opcional: define un borde */
+  padding: 0.5rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+.form-control:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al enfocar */
+  outline: none; /* Elimina el borde azul predeterminado */
+}
+
 .carousel-indicators {
   list-style: none; /* Elimina los números de la lista */
   padding: 0; /* Elimina el espacio adicional */
@@ -230,7 +243,7 @@ footer nav ul li a:hover {
     flex-shrink: 0;
   }
   header .logotipo {
-    font-size: 3rem; /* Ajusta el tamaño del logotipo */
+    font-size: 2rem; /* Ajusta el tamaño del logotipo */
     text-align: center;
     flex-grow: 1; /* Permite que el logotipo ocupe el espacio disponible */
     margin: 0 1rem; /* Espaciado lateral para evitar que toque otros elementos */
@@ -281,7 +294,7 @@ footer nav ul li a:hover {
 }
 @media (min-width: 577px) and (max-width: 768px) {
   header .logotipo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header .menu {
     display: none; /* Oculta el menú por defecto */

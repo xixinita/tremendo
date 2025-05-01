@@ -86,6 +86,25 @@ header {
   text-shadow: 3px 3px 1px $gris;
 
 }
+.form-control{
+  box-shadow: 3px 3px 1px $gris; /* Sombra suave */
+  border: 1px solid $gris-clarito; /* Opcional: define un borde */
+  padding: 0.5rem; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+
+.form-control:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al enfocar */
+  outline: none; /* Elimina el borde azul predeterminado */
+}
+
+
+
+
+
+
 
 // .......... main ..........
 .carousel-indicators {
@@ -274,7 +293,7 @@ footer {
 
     }
     .logotipo {
-      font-size: 3rem; /* Ajusta el tamaño del logotipo */
+      font-size: 2rem; /* Ajusta el tamaño del logotipo */
       text-align: center;
       flex-grow: 1; /* Permite que el logotipo ocupe el espacio disponible */
       margin: 0 1rem; /* Espaciado lateral para evitar que toque otros elementos */
@@ -337,7 +356,7 @@ footer {
 
   header {
     .logotipo {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .menu {
       display: none; /* Oculta el menú por defecto */
