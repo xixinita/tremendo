@@ -32,9 +32,9 @@
   </head>
   <body>
     <header class="header-responsive">
-       <!-- Botón hamburguesa -->
-    <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
-  
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
+
       <div class="d-flex row align-items-center justify-content-around mx-auto">
         <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
           <div class="col-3 mx-auto">
@@ -44,31 +44,41 @@
               alt="Isotipo de Tremendo!"
             />
           </div>
-          <div class="col-9 mx-auto">
+          <div class="col-7 mx-auto">
             <h1 class="text-center logotipo">TREMENDO!</h1>
           </div>
-            
-              </div>
+          <div class="espacio col-2 mx-auto"></div>
+        </div>
 
-        <div class="col-md-7 col-sm-11 mt-3 mx-auto img-fluid">
+        <div class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around">
           <input class="form-control rounded mb-2" />
         </div>
       </div>
 
-  <!-- Menú -->
-  <nav class="menu">
-    <ul class="nav mt-2 justify-content-around mb-2">
-      <li class="mx-3 nav-item"><a href="./index.html"><b>HOME</b></a></li>
-      <li class="mx-3 nav-item"><a href="./pages/tienda.html">PRODUCTOS</a></li>
-      <li class="mx-3 nav-item"><a href="./pages/nosotros.html">NOSOTROS</a></li>
-      <li class="mx-3 nav-item"><a href="./pages/promociones.html">PROMOCIONES</a></li>
-      <li class="mx-3 nav-item"><a href="./pages/contacto.html">CONTACTO</a></li>
-    </ul>
-  </nav>
-</header>
+      <!-- Menú -->
+      <nav class="menu">
+        <ul class="nav mt-2 justify-content-around mb-2">
+          <li class="mx-3 nav-item">
+            <a href="./index.html"><b>HOME</b></a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./pages/tienda.html">PRODUCTOS</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./pages/nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./pages/promociones.html">PROMOCIONES</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./pages/contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-      <div class="mt-4">
+      <div class="mt-4 mb-3">
         <div id="banner" class="carousel slide" data-bs-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -117,7 +127,7 @@
       </div>
 
       <div class="container d-block my-4">
-        <div class="row mt-5">
+        <div class="row mt-2">
           <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
             <div class="card h-80 border-0">
               <a href="./pages/producto.html">
@@ -199,7 +209,7 @@
           </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row mt-2">
           <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
             <div class="card h-80 border-0">
               <a href="./pages/producto.html">
@@ -280,60 +290,66 @@
             </div>
           </div>
         </div>
-</div>
+      </div>
 
-
-
-
-        <div class="row mt-3">
-          <div class="col-10 mx-auto">
-            <hr class="my-4" />
-            <h3 class="text-center my-4">Nuestros Clientes</h3>
-          </div>
+      <div class="row mt-3">
+        <div class="col-10 mx-auto">
+          <hr class="my-4" />
+          <h2 class="text-center my-4">Nuestros Clientes</h2>
         </div>
-        
-        <div class="nav mt-2 justify-content-around mb-2">
+      </div>
+
+      <div class="nav mt-2 justify-content-around d-flex mb-2">
         <div class="row mt-3">
-          <div class="col-lg-3 col-sm-6 mb-2">
+          <div class="col-lg-3 col-sm-12 mb-2">
             <img
               class="clientes"
               src="./imgs/cliente1a.png"
               alt="Opinion de Messi"
             />
           </div>
-          <div class="col-lg-3 col-sm-5 mb-2">
-           <h5 class="opiniones">"Le compré el kit sensorial a mi hijo y la verdad es que le encantó. Es lindo ver cómo se divierte con cosas simples, como las de antes. La calidad es muy buena y se nota que está hecho con cuidado. Lo recomiendo para los que quieren regalar algo especial."</h5>
+          <div class="col-lg-3 col-sm-12 mb-2">
+            <h5 class="opiniones">
+              "Le compré el kit sensorial a mi hijo y la verdad es que le
+              encantó. Es lindo ver cómo se divierte con cosas simples, como las
+              de antes. La calidad es muy buena y se nota que está hecho con
+              cuidado. Lo recomiendo para los que quieren regalar algo
+              especial."
+            </h5>
           </div>
-          <div class="col-lg-3 col-sm-6 mb-2">
+          <div class="col-lg-3 col-sm-12 mb-2">
             <img
               class="clientes"
               src="./imgs/cliente2a.png"
               alt="Opinion de Fideo"
             />
           </div>
-          <div class="col-lg-3 col-sm-5 mb-2 ">
-            <h5 class="opiniones">"Le regalé la camarita a mi nena y le fascinó. No se despegó en todo el día, nos dibujó en sus fotos a todos. Está bien hecha y muy original, se nota que está pensada para los chicos. Me puso contento verla tan feliz con algo tan simple. Lo recomiendo, sin dudas."</h5>
+          <div class="col-lg-3 col-sm-12 mb-2">
+            <h5 class="opiniones">
+              "Le regalé la camarita a mi nena y le fascinó. No se despegó en
+              todo el día, nos dibujó en sus fotos a todos. Está bien hecha y
+              muy original, se nota que está pensada para los chicos. Me puso
+              contento verla tan feliz con algo tan simple. Lo recomiendo, sin
+              dudas."
+            </h5>
           </div>
         </div>
-      </div>
-
       </div>
     </main>
 
     <footer>
-      <nav >
-        <ul class=" d-flex align-items-center justify-content-around">
+      <nav>
+        <ul class="d-flex align-items-center justify-content-around">
           <li><a href="./index.html">Accesibilidad</a></li>
           <li><a href="./index.html">Privacidad</a></li>
-          <li><a href="./index.html">Botón de arrepentimiento</a></li>
-          <li><a href="./index.html">Ayuda</a></li>
-          <li><a href="./index.html">Envíos</a></li>
           <li><a href="./pages/contacto.html">Contacto</a></li>
+          
+          <li><a href="./index.html">Botón de arrepentimiento</a></li>
+          <li><a href="./index.html">Envíos</a></li>
+          <li><a href="./index.html">Ayuda</a></li>
+          
         </ul>
-
       </nav>
-
-
     </footer>
     <script src="./scripts/menu.js"></script>
   </body>
