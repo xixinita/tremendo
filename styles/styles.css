@@ -205,9 +205,26 @@ h3 {
   font-size: large;
 }
 
+.opiniones {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border: 2px solid hsl(165, 85%, 38%);
+  border-radius: 18px;
+  text-align: center;
+  color: hsl(0, 0%, 16%);
+  background: #fff;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+}
+
 footer {
   background-color: hsl(165, 94%, 31%);
-  padding: 1rem;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -218,9 +235,6 @@ footer nav ul {
   justify-content: center;
   list-style: none;
   padding: 0;
-}
-footer nav ul li {
-  margin: 0.5rem;
 }
 footer nav ul li a {
   text-decoration: none;
@@ -286,6 +300,11 @@ footer nav ul li a:hover {
   header .menu ul li {
     margin: 10px 0;
   }
+  header .opiniones {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: small;
+  }
   header .menu-toggle {
     display: block;
     font-size: 2rem;
@@ -320,7 +339,7 @@ footer nav ul li a:hover {
     margin: 0.5rem 0;
   }
 }
-@media (min-width: 577px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 821px) {
   header .logotipo {
     font-size: 2rem;
   }
@@ -382,9 +401,6 @@ footer nav ul {
   }
   .filtros h4 {
     font-size: 1.2rem;
-  }
-  footer {
-    padding: 3rem;
   }
   footer nav ul {
     justify-content: space-around;
