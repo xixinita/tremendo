@@ -159,6 +159,10 @@ header nav ul li a {
   word-break: break-word;
 }
 
+.row.mt-3 {
+  align-items: stretch;
+}
+
 .prod-grande, .prod-miniatura {
   padding: 5px;
 }
@@ -190,7 +194,7 @@ header nav ul li a {
   text-shadow: 1px 1px 1px hsl(0, 0%, 56%);
 }
 
-.titulo {
+.titulo, .titulo-verde {
   font-size: 3em;
   color: hsl(60, 71%, 99%);
   font-family: "Sour Gummy", sans-serif;
@@ -200,6 +204,10 @@ header nav ul li a {
   font-variation-settings: "wdth" 100;
   margin-top: 10px;
   margin-left: 20px;
+}
+
+.titulo-verde {
+  color: hsl(165, 85%, 38%);
 }
 
 .filtros {
@@ -243,6 +251,18 @@ h3 {
   align-items: center;
 }
 
+.btn-carrito {
+  border: none;
+  color: hsl(0, 0%, 16%);
+  background-color: hsl(60, 71%, 99%);
+  font-size: medium;
+  font-weight: normal;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px hsl(0, 0%, 56%);
+}
+
 .opiniones {
   display: flex;
   align-items: center;
@@ -255,6 +275,20 @@ h3 {
   background: #fff;
   margin: 0 auto;
   font-size: 1.4rem;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  border: 2px solid hsl(165, 85%, 38%);
+  border-radius: 10px;
+  text-align: center;
+  color: hsl(165, 85%, 38%);
+  background: #fff;
+  margin: 0 auto;
+  font-size: 2rem;
 }
 
 footer {

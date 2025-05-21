@@ -1,183 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tremendo! - Taller de juguetes</title>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-  <title>Tremendo! - Taller de juguetes</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/styles.css" />
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- css -->
-  <link rel="stylesheet" href="../styles/styles.css" />
+  <body>
+    <header class="header-responsive">
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Hubballi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-
-  <header>
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
-
-    <div class="d-flex row align-items-center justify-content-around mx-auto">
-      <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
-        <div class="col-3 mx-auto">
-          <img class="isotipo mx-auto" src="../imgs/isotipo.png" alt="Isotipo de Tremendo!" />
+      <div class="d-flex row align-items-center justify-content-around mx-auto">
+        <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
+          <div class="col-3 mx-auto">
+            <img
+              class="isotipo mx-auto"
+              src="../imgs/isotipo.png"
+              alt="Isotipo de Tremendo!"
+            />
+          </div>
+          <div class="col-7 mx-auto">
+            <h1 class="text-center logotipo">TREMENDO!</h1>
+          </div>
+          <div class="espacio col-2 mx-auto"></div>
         </div>
-        <div class="col-9 mx-auto">
-          <h1 class="text-center logotipo">TREMENDO!</h1>
+
+        <div
+          class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around"
+        >
+          <input class="form-control rounded mb-2" />
         </div>
-    
-      </div>
-    
-      <div class="col-md-7 col-sm-11 mt-3 mx-auto img-fluid">
-        <input class="form-control rounded mb-2" />
-      </div>
-    </div>
-
-    <!-- Menú -->
-    <nav class="menu">
-      <ul class="nav mt-2 justify-content-around mb-2">
-        <li class="mx-3 nav-item">
-          <a href="../index.html">HOME</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="/pages/tienda.html">PRODUCTOS</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./nosotros.html">NOSOTROS</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./promociones.html">PROMOCIONES</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <main>
-
-    <div>
-
-
-      <div class="titulo">
-        <h2>
-          CARRITO DE COMPRAS
-        </h2>
       </div>
 
-      <div class="carritoizq col-8 mx-auto">
+      <!-- Menú -->
+      <nav class="menu">
+        <ul class="nav mt-2 justify-content-around mb-2">
+          <li class="mx-3 nav-item">
+            <a href="../index.html">HOME</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./tienda.html">PRODUCTOS</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./promociones.html">PROMOCIONES</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="carrito-producto" data-precio="9000">
-          <img src="../imgs/tienda6.png" alt="producto en venta" class="carrito-img">
-          <div class="carrito-info">
-            <h4>Kit muñeco para armar</h4>
-            <h5>Box 30 piezas encastrables</h5>
-            <div class="carrito-controles">
-              <button class="btn-menos">-</button>
-              <span class="cantidad">1</span>
-              <button class="btn-mas">+</button>
-              <button class="btn-guardar">Guardar para después</button>
-              <button class="btn-modificar">Modificar</button>
-              <button class="btn-eliminar">Eliminar</button>
+    <main>
+      <div>
+        <div class="titulo-verde">
+          <h2>CARRITO DE COMPRAS</h2>
+        </div>
+        <div class="container">
+          <div class="row d-flex justify-content-around">
+            <div class="carritoizq col-sm-12 col-md-8">
+              <div class="carrito-producto" data-precio="9000">
+                <img
+                  src="../imgs/tienda6.png"
+                  alt="producto en venta"
+                  class="carrito-img"
+                />
+                <div class="carrito-info">
+                  <h4>Kit muñeco para armar</h4>
+                  <h5>Box 30 piezas encastrables</h5>
+                  <div class="carrito-controles">
+                    <button class="btn-carrito btn-menos">-</button>
+                    <span class="cantidad">1</span>
+                    <button class="btn-carrito btn-mas">+</button>
+                    <button class="btn-carrito btn-guardar">
+                      Guardar para después
+                    </button>
+                    <button class="btn-carrito btn-modificar">Modificar</button>
+                    <button class="btn-carrito btn-eliminar">Eliminar</button>
+                  </div>
+                </div>
+                <div class="carrito-precio">
+                  <h4 class="precio-producto">$9000</h4>
+                </div>
+              </div>
+
+              <div class="carrito-producto" data-precio="17000">
+                <img
+                  src="../imgs/tienda5.png"
+                  alt="producto en venta"
+                  class="carrito-img"
+                />
+                <div class="carrito-info">
+                  <h4>Kit texturas y colores</h4>
+                  <h5>Set de elementos de variados materiales</h5>
+                  <div class="carrito-controles">
+                    <button class="btn-carrito btn-menos">-</button>
+                    <span class="cantidad">1</span>
+                    <button class="btn-carrito btn-mas">+</button>
+                    <button class="btn-carrito btn-guardar">
+                      Guardar para después
+                    </button>
+                    <button class="btn-carrito btn-modificar">Modificar</button>
+                    <button class="btn-carrito btn-eliminar">Eliminar</button>
+                  </div>
+                </div>
+                <div class="carrito-precio">
+                  <h4 class="precio-producto">$17000</h4>
+                </div>
+              </div>
+
+              <div class="carrito-producto" data-precio="15000">
+                <img
+                  src="../imgs/tienda6.png"
+                  alt="producto en venta"
+                  class="carrito-img"
+                />
+                <div class="carrito-info">
+                  <h4>Cámara a mano alzada</h4>
+                  <h5>Cámara de madera + papeles y fibras</h5>
+                  <div class="carrito-controles">
+                    <button class="btn-carrito btn-menos">-</button>
+                    <span class="cantidad">1</span>
+                    <button class="btn-carrito btn-mas">+</button>
+                    <button class="btn-carrito btn-guardar">
+                      Guardar para después
+                    </button>
+                    <button class="btn-carrito btn-modificar">Modificar</button>
+                    <button class="btn-carrito btn-eliminar">Eliminar</button>
+                  </div>
+                </div>
+                <div class="carrito-precio">
+                  <h4 class="precio-producto">$15000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="carritoder col-sm-12 col-md-4">
+              <div class="carrito-resumen">
+                <h4 class=" mb-5 mt-3">Subtotal: <span id="subtotal">$29997</span></h4>
+                <h4 class=" mb-5 mt-3">Descuentos: <span id="descuento">$0</span></h4>
+                <form id="form-cupon">
+                  <label for="cupon">TENGO UN CUPON:</label>
+                  <input type="text" name="cupon" id="cupon" />
+                  <button class="btn"  type="submit" >APLICAR</button>
+                </form>
+                <div class="mt-6 mb-5">
+                <h2 class="total ">
+                  Total: <span id="total"> $29997</span>
+                </h2></div>
+              </div>
             </div>
           </div>
-          <div class="carrito-precio">
-            <h4 class="precio-producto">$9000</h4>
-          </div>
-        </div>
-
-        <div class="carrito-producto" data-precio="17000">
-          <img src="../imgs/tienda5.png" alt="producto en venta" class="carrito-img">
-          <div class="carrito-info">
-            <h4>Kit texturas y colores</h4>
-            <h5>Set de elementos de variados materiales</h5>
-            <div class="carrito-controles">
-              <button class="btn-menos">-</button>
-              <span class="cantidad">1</span>
-              <button class="btn-mas">+</button>
-              <button class="btn-guardar">Guardar para después</button>
-              <button class="btn-modificar">Modificar</button>
-              <button class="btn-eliminar">Eliminar</button>
-            </div>
-          </div>
-          <div class="carrito-precio">
-            <h4 class="precio-producto">$17000</h4>
-          </div>
-        </div>
-
-
-        <div class="carrito-producto" data-precio="15000">
-          <img src="../imgs/tienda6.png" alt="producto en venta" class="carrito-img">
-          <div class="carrito-info">
-            <h4>Cámara a mano alzada</h4>
-            <h5>Cámara de madera + papeles y fibras </h5>
-            <div class="carrito-controles">
-              <button class="btn-menos">-</button>
-              <span class="cantidad">1</span>
-              <button class="btn-mas">+</button>
-              <button class="btn-guardar">Guardar para después</button>
-              <button class="btn-modificar">Modificar</button>
-              <button class="btn-eliminar">Eliminar</button>
-            </div>
-          </div>
-          <div class="carrito-precio">
-            <h4 class="precio-producto">$15000</h4>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="carritoder">
-          <div class="carrito-resumen">
-            <h4>Subtotal: <span id="subtotal">$29997</span></h4>
-            <h4>Descuentos: <span id="descuento">$0</span></h4>
-            <form id="form-cupon">
-              <label for="cupon">TENGO UN CUPON:</label>
-              <input type="text" name="cupon" id="cupon">
-              <button type="submit">APLICAR</button>
-            </form>
-            <h2>Total: <span id="total">$29997</span></h2>
-          </div>
         </div>
       </div>
-      </div>
+    </main>
 
-  </main>
- 
+    <footer>
+      <nav>
+        <ul class="d-flex align-items-center justify-content-around">
+          <li><a href="../index.html">Accesibilidad</a></li>
+          <li><a href="../index.html">Privacidad</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
 
-
-  <footer>
-    <nav>
-      <ul class="mt-3 d-flex align-items-center justify-content-around">
-        <li><a href="../index.html">Accesibilidad</a></li>
-        <li><a href="../index.html">Privacidad</a></li>
-        <li><a href="../index.html">Botón de arrepentimiento</a></li>
-        <li><a href="../index.html">Ayuda</a></li>
-        <li><a href="../index.html">Envíos</a></li>
-        <li><a href="../pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </footer>
-
-</body>
+          <li><a href="../index.html">Botón de arrepentimiento</a></li>
+          <li><a href="../index.html">Envíos</a></li>
+          <li><a href="../index.html">Ayuda</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="../scripts/menu.js"></script>
+  </body>
+</html>

@@ -179,7 +179,9 @@ header {
     word-break: break-word;
   }
 }
-
+.row.mt-3 {
+  align-items: stretch;
+}
 .prod-grande {
   padding: 5px;
 
@@ -225,6 +227,11 @@ header {
   margin-top: 10px;
   margin-left: 20px;
 }
+.titulo-verde {
+  @extend .titulo;
+  color: $verde-tremendo;
+  
+}
 .filtros {
   text-align: right;
   color: $gris-oscuro;
@@ -261,6 +268,18 @@ color: $blanquito;
   align-items: center;
   
 }
+.btn-carrito{
+ border: none; 
+color: $gris-oscuro;
+  background-color:  $blanquito;
+  font-size: medium;
+  font-weight:normal;
+  border-radius: 4px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px $gris-clarito;
+  
+}
 
 .opiniones {
  
@@ -277,6 +296,20 @@ color: $blanquito;
   margin: 0 auto;
   font-size: 1.4rem;
 
+}
+
+.total{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  border: 2px solid $verde-tremendo;
+  border-radius: 10px;
+  text-align: center;
+  color: $verde-tremendo;
+  background: #fff;
+  margin: 0 auto;
+  font-size: 2rem;
 }
 
 // .......... footer .........
