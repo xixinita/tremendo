@@ -31,51 +31,47 @@
     />
   </head>
   <body>
-    <header>
-      <!-- Botón hamburguesa -->
-      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
+   <header class="header-responsive">
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
 
-      <div class="d-flex row align-items-center justify-content-around mx-auto">
-        <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
-          <div class="col-3 mx-auto">
-            <img
-              class="isotipo mx-auto"
-              src="../imgs/isotipo.png"
-              alt="Isotipo de Tremendo!"
-            />
-          </div>
-          <div class="col-9 mx-auto">
-            <h1 class="text-center logotipo">TREMENDO!</h1>
-          </div>
-            
-              </div>
-
-        <div class="col-md-7 col-sm-11 mt-3 mx-auto img-fluid">
-          <input class="form-control rounded mb-2" />
+    <div class="d-flex row align-items-center justify-content-around mx-auto">
+      <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
+        <div class="col-3 mx-auto">
+          <img class="isotipo mx-auto" src="../imgs/isotipo.png" alt="Isotipo de Tremendo!" />
         </div>
+        <div class="col-7 mx-auto">
+          <h1 class="text-center logotipo">TREMENDO!</h1>
+        </div>
+        <div class="espacio col-2 mx-auto"></div>
       </div>
 
-      <!-- Menú -->
-      <nav class="menu">
-        <ul class="nav mt-2 justify-content-around mb-2">
-          <li class="mx-3 nav-item">
-            <a href="../index.html">HOME</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./tienda.html"><b>PRODUCTOS</b></a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./nosotros.html">NOSOTROS</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./promociones.html">PROMOCIONES</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./contacto.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <div class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around">
+        <input class="form-control rounded mb-2" />
+      </div>
+    </div>
+
+    <!-- Menú -->
+    <nav class="menu">
+      <ul class="nav mt-2 justify-content-around mb-2">
+        <li class="mx-3 nav-item">
+          <a href="../index.html">HOME</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./tienda.html"><b>PRODUCTOS</b></a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./promociones.html">PROMOCIONES</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <main>
 
@@ -276,7 +272,7 @@
       </ul>
     </nav>
     </footer>
-    <script src="../scripts/tienda.js"></script>
+    <script src="../scripts/menu.js"></script>
     <script src="../scripts/tienda.js"></script>
   </body>
 </html>
