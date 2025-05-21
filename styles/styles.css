@@ -52,6 +52,7 @@ header nav ul li a {
   position: absolute;
   top: 15px;
   right: 15px;
+  align-items: center;
 }
 
 .isotipo {
@@ -152,7 +153,8 @@ header nav ul li a {
   justify-content: flex-end;
   padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
-.tarjeta-producto .card-title, .tarjeta-producto .card-text {
+.tarjeta-producto .card-title,
+.tarjeta-producto .card-text {
   margin-bottom: 0.5rem;
   word-break: break-word;
 }
@@ -186,11 +188,6 @@ header nav ul li a {
   font-size: 3em;
   text-align: left;
   text-shadow: 1px 1px 1px hsl(0, 0%, 56%);
-}
-
-.clientes {
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 .titulo {
@@ -237,12 +234,9 @@ h3 {
 }
 
 .opiniones {
-  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
   padding: 1.5rem 1rem;
   border: 2px solid hsl(165, 85%, 38%);
   border-radius: 18px;
@@ -251,7 +245,6 @@ h3 {
   background: #fff;
   margin: 0 auto;
   font-size: 1.4rem;
-  box-sizing: border-box;
 }
 
 footer {
@@ -282,6 +275,7 @@ footer nav ul li a:hover {
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 0 1rem;
+    padding-bottom: 10px;
   }
   header .header-responsive {
     width: 100%;
@@ -296,6 +290,9 @@ footer nav ul li a:hover {
     max-width: 100vw;
     padding: 0 1rem;
     box-sizing: border-box;
+  }
+  header .form-control {
+    max-width: 95%;
   }
   header .isotipo {
     max-width: 48px;
@@ -329,10 +326,11 @@ footer nav ul li a:hover {
   header .menu ul li {
     margin: 10px 0;
   }
-  header .opiniones {
+  header h5 .opiniones {
     margin-left: 20px;
     margin-right: 20px;
     font-size: small;
+    border-color: hsl(60, 71%, 99%);
   }
   header .menu-toggle {
     display: block;
@@ -340,6 +338,7 @@ footer nav ul li a:hover {
     color: hsl(60, 71%, 99%);
     background: none;
     border: none;
+    align-items: center;
     border-radius: 3px;
     flex-shrink: 0;
   }
@@ -373,18 +372,15 @@ footer nav ul li a:hover {
   padding: 0.5rem;
 }
 
-.row.mt-5, .row.mt-3 {
-  flex-direction: column !important;
-}
-
-.col-md-3, .col-sm-6 {
+.col-md-3,
+.col-sm-6 {
   width: 100% !important;
   max-width: 100% !important;
   flex: 0 0 100% !important;
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 577px) and (max-width: 821px) {
+@media (min-width: 577px) and (max-width: 768px) {
   header .logotipo {
     font-size: 2rem;
   }
@@ -405,8 +401,13 @@ footer nav ul li a:hover {
   header .menu ul li {
     margin: 10px 0;
   }
+  header .form-control {
+    max-width: 80%;
+  }
   header .menu-toggle {
     display: block; /* Muestra el botón hamburguesa */
+    align-items: center;
+    margin-top: 23px;
   }
   header .menu.active {
     display: flex; /* Muestra el menú cuando está activo */
@@ -417,7 +418,8 @@ footer nav ul li a:hover {
   .tarjeta-producto .card-img-top {
     max-height: 150px;
   }
-  .col-md-3, .col-sm-6 {
+  .col-md-3,
+  .col-sm-6 {
     width: 50% !important;
     max-width: 50% !important;
     flex: 0 0 50% !important;
@@ -441,13 +443,18 @@ footer nav ul {
 }
 
 @media (min-width: 769px) {
+  .form-control {
+    max-width: 85%;
+    margin-left: auto;
+  }
   .tarjeta-producto {
     min-height: 320px;
   }
   .tarjeta-producto .card-img-top {
     max-height: 180px;
   }
-  .col-md-3, .col-sm-6 {
+  .col-md-3,
+  .col-sm-6 {
     width: 25% !important;
     max-width: 25% !important;
     flex: 0 0 25% !important;

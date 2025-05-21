@@ -47,12 +47,9 @@ header {
     }
   }
 }
-.espacio{
-   display: none;
+.espacio {
+  display: none;
 }
-
-
-
 
 .menu-toggle {
   display: none;
@@ -64,6 +61,7 @@ header {
   position: absolute;
   top: 15px;
   right: 15px;
+  align-items: center;
 }
 
 .isotipo {
@@ -101,16 +99,15 @@ header {
   margin: 0; /* Ajusta el margen */
 }
 
-
 .tarjeta-producto {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 320px; // Altura mínima razonable para desktop
+  min-height: 320px;
   background-color: $blanquito;
   text-align: center;
   margin-bottom: 1rem;
-div {
+  div {
     div {
       a {
         text-decoration: none;
@@ -176,7 +173,8 @@ div {
     padding: 0.5rem 0.5rem 1rem 0.5rem;
   }
 
-  .card-title, .card-text {
+  .card-title,
+  .card-text {
     margin-bottom: 0.5rem;
     word-break: break-word;
   }
@@ -192,6 +190,8 @@ div {
     border-radius: 10px;
   }
 }
+
+
 .prod-miniatura {
   @extend .prod-grande;
   justify-content: space-between;
@@ -213,10 +213,7 @@ div {
   }
 }
 
-.clientes {
-  padding-left: 2px;
-  padding-right: 2px;
-}
+
 .titulo {
   font-size: 3em;
   color: $blanquito;
@@ -255,12 +252,11 @@ h3 {
 }
 
 .opiniones {
-  flex: 1 1 auto;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+ 
   padding: 1.5rem 1rem;
   border: 2px solid $verde-tremendo;
   border-radius: 18px;
@@ -269,7 +265,7 @@ h3 {
   background: #fff;
   margin: 0 auto;
   font-size: 1.4rem;
-  box-sizing: border-box;
+
 }
 
 // .......... footer .........
@@ -306,11 +302,12 @@ footer {
 // Media queries
 @media (max-width: 576px) {
   header {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    flex-wrap: nowrap; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding: 0 1rem;
+    padding-bottom: 10px;
     .header-responsive {
       width: 100%;
       background-color: $verde-tremendo;
@@ -325,24 +322,26 @@ footer {
       padding: 0 1rem;
       box-sizing: border-box;
     }
+    .form-control {
+  max-width: 95%;
+}
 
     .isotipo {
       max-width: 48px;
       height: auto;
       display: block;
-   
-    margin-right: 0.5rem;     flex-shrink: 0;
+
+      margin-right: 0.5rem;
+      flex-shrink: 0;
     }
     .logotipo {
       font-size: 2em;
       color: $blanquito;
       text-align: left;
-      flex-grow:  2 ;
+      flex-grow: 2;
       margin: 0 0.5rem;
-    
+
       flex-shrink: 0;
-      
-     
     }
     .menu {
       display: none;
@@ -363,30 +362,34 @@ footer {
         }
       }
     }
-    .opiniones {
-      margin-left: 20px;
-      margin-right: 20px;
-      font-size: small; 
-    }
 
+    h5 {
+      .opiniones {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: small;
+        border-color: $blanquito;
+      }
+    }
     .menu-toggle {
       display: block;
       font-size: 2rem;
       color: $blanquito;
       background: none;
       border: none;
-     
+      align-items: center;
       border-radius: 3px;
       flex-shrink: 0;
+      
     }
     .menu.active {
-      display: flex; 
+      display: flex;
     }
   }
-  .espacio{
-   display: block;
-}
-  
+  .espacio {
+    display: block;
+  }
+
   .filtros {
     margin-top: 2rem;
     text-align: center;
@@ -402,29 +405,27 @@ footer {
   }
 }
 .tarjeta-producto {
-    min-height: unset;
-    height: auto;
-    margin-bottom: 1.5rem;
+  min-height: unset;
+  height: auto;
+  margin-bottom: 1.5rem;
 
-    .card-img-top {
-      max-height: 220px;
-    }
-
-    .card-body {
-      padding: 0.5rem;
-    }
-  }
-  .row.mt-5, .row.mt-3 {
-    flex-direction: column !important;
-  }
-  .col-md-3, .col-sm-6 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
-    margin-bottom: 1.5rem;
+  .card-img-top {
+    max-height: 220px;
   }
 
-@media (min-width: 577px) and (max-width: 821px) {
+  .card-body {
+    padding: 0.5rem;
+  }
+}
+.col-md-3,
+.col-sm-6 {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
   header {
     .logotipo {
       font-size: 2rem;
@@ -448,10 +449,14 @@ footer {
         }
       }
     }
+.form-control {
+  max-width: 80%;
 
-
+}
     .menu-toggle {
       display: block; /* Muestra el botón hamburguesa */
+      align-items: center;
+      margin-top: 23px; 
     }
 
     .menu.active {
@@ -464,7 +469,8 @@ footer {
       max-height: 150px;
     }
   }
-  .col-md-3, .col-sm-6 {
+  .col-md-3,
+  .col-sm-6 {
     width: 50% !important;
     max-width: 50% !important;
     flex: 0 0 50% !important;
@@ -490,13 +496,19 @@ footer {
 }
 
 @media (min-width: 769px) {
-   .tarjeta-producto {
+
+  .form-control {
+  max-width: 85%;
+  margin-left:auto;
+}
+  .tarjeta-producto {
     min-height: 320px;
     .card-img-top {
       max-height: 180px;
     }
   }
-  .col-md-3, .col-sm-6 {
+  .col-md-3,
+  .col-sm-6 {
     width: 25% !important;
     max-width: 25% !important;
     flex: 0 0 25% !important;

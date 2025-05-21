@@ -1,356 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tremendo! - Taller de juguetes</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <title>Tremendo! - Taller de juguetes</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./styles/styles.css" />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header-responsive">
-      <!-- Botón hamburguesa -->
-      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-      <div class="d-flex row align-items-center justify-content-around mx-auto">
-        <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
-          <div class="col-3 mx-auto">
-            <img
-              class="isotipo mx-auto"
-              src="./imgs/isotipo.png"
-              alt="Isotipo de Tremendo!"
-            />
-          </div>
-          <div class="col-7 mx-auto">
-            <h1 class="text-center logotipo">TREMENDO!</h1>
-          </div>
-          <div class="espacio col-2 mx-auto"></div>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hubballi&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header-responsive">
+    <!-- Botón hamburguesa -->
+    <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
+
+    <div class="d-flex row align-items-center justify-content-around mx-auto">
+      <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
+        <div class="col-3 mx-auto">
+          <img class="isotipo mx-auto" src="./imgs/isotipo.png" alt="Isotipo de Tremendo!" />
         </div>
-
-        <div class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around">
-          <input class="form-control rounded mb-2" />
+        <div class="col-7 mx-auto">
+          <h1 class="text-center logotipo">TREMENDO!</h1>
         </div>
+        <div class="espacio col-2 mx-auto"></div>
       </div>
 
-      <!-- Menú -->
-      <nav class="menu">
-        <ul class="nav mt-2 justify-content-around mb-2">
-          <li class="mx-3 nav-item">
-            <a href="./index.html"><b>HOME</b></a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./pages/tienda.html">PRODUCTOS</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./pages/nosotros.html">NOSOTROS</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./pages/promociones.html">PROMOCIONES</a>
-          </li>
-          <li class="mx-3 nav-item">
-            <a href="./pages/contacto.html">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div class="mt-4 mb-3">
-        <div id="banner" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li
-              data-bs-target="#banner"
-              data-bs-slide-to="0"
-              class="active"
-            ></li>
-            <li data-bs-target="#banner" data-bs-slide-to="1"></li>
-            <li data-bs-target="#banner" data-bs-slide-to="2"></li>
-          </ol>
-
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./imgs/banner1.png" alt="Libre juego" />
-            </div>
-
-            <div class="carousel-item">
-              <img src="./imgs/banner2.png" alt="Kit sensorial" />
-            </div>
-
-            <div class="carousel-item">
-              <img src="./imgs/banner3.png" alt="Muñeca de colores" />
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#banner"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#banner"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
-        </div>
+      <div class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around">
+        <input class="form-control rounded mb-2" />
       </div>
+    </div>
 
-      <div class="container d-block my-4">
-        <div class="row mt-2">
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
-              <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda9.png"
-                  alt="cámara interactiva para dibujar a mano las fotos"
-                  class="card-img-top mt-3"
-                />
-              </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Cámara "a mano alzada"</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$15000</strong>
-                </p>
-              </div>
-            </div>
+    <!-- Menú -->
+    <nav class="menu">
+      <ul class="nav mt-2 justify-content-around mb-2">
+        <li class="mx-3 nav-item">
+          <a href="./index.html"><b>HOME</b></a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./pages/tienda.html">PRODUCTOS</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./pages/nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./pages/promociones.html">PROMOCIONES</a>
+        </li>
+        <li class="mx-3 nav-item">
+          <a href="./pages/contacto.html">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mt-4 mb-3">
+      <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-bs-target="#banner" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#banner" data-bs-slide-to="1"></li>
+          <li data-bs-target="#banner" data-bs-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/banner1.png" alt="Libre juego" />
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
-              <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda2.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
-              </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit luces y sombras</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./imgs/banner2.png" alt="Kit sensorial" />
           </div>
 
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
-              <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda3.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
-              </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit movimiento</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./imgs/banner3.png" alt="Muñeca de colores" />
           </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
 
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
+    <div class="container d-block my-4">
+      <div class="row mt-2">
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda9.png" alt="cámara interactiva para dibujar a mano las fotos"
+                class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
               <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda4.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
+                <h5 class="card-title">Cámara "a mano alzada"</h5>
               </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Muñeca de colores</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
+              <p class="card-text">
+                <strong>$15000</strong>
+              </p>
             </div>
           </div>
         </div>
 
-        <div class="row mt-2">
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda2.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
               <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda5.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
+                <h5 class="card-title">Kit luces y sombras</h5>
               </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit sensorial</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda3.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
               <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda6.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
+                <h5 class="card-title">Kit movimiento</h5>
               </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit muñeco</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda4.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
               <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda7.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
+                <h5 class="card-title">Muñeca de colores</h5>
               </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit geometría</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
-            <div class="card h-80 border-0">
-              <a href="./pages/producto.html">
-                <img
-                  src="./imgs/tienda1.png"
-                  alt="producto en venta"
-                  class="card-img-top mt-3"
-                />
-              </a>
-              <div class="card-body">
-                <a href="./pages/producto.html">
-                  <h5 class="card-title">Kit libre juego</h5>
-                </a>
-                <p class="card-text">
-                  <strong>$9999</strong>
-                </p>
-              </div>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row mt-3">
-        <div class="col-10 mx-auto">
-          <hr class="my-4" />
-          <h2 class="text-center my-4">Nuestros Clientes</h2>
-        </div>
-      </div>
-
-      <div class="nav mt-2 justify-content-around d-flex mb-2">
-        <div class="row mt-3">
-          <div class="col-lg-3 col-sm-12 mb-2">
-            <img
-              class="clientes"
-              src="./imgs/cliente1a.png"
-              alt="Opinion de Messi"
-            />
-          </div>
-          <div class="col-lg-3 col-sm-12 mb-2">
-            <h5 class="opiniones">
-              "Le compré el kit sensorial a mi hijo y la verdad es que le
-              encantó. Es lindo ver cómo se divierte con cosas simples, como las
-              de antes. La calidad es muy buena y se nota que está hecho con
-              cuidado. Lo recomiendo para los que quieren regalar algo
-              especial."
-            </h5>
-          </div>
-          <div class="col-lg-3 col-sm-12 mb-2">
-            <img
-              class="clientes"
-              src="./imgs/cliente2a.png"
-              alt="Opinion de Fideo"
-            />
-          </div>
-          <div class="col-lg-3 col-sm-12 mb-2">
-            <h5 class="opiniones">
-              "Le regalé la camarita a mi nena y le fascinó. No se despegó en
-              todo el día, nos dibujó en sus fotos a todos. Está bien hecha y
-              muy original, se nota que está pensada para los chicos. Me puso
-              contento verla tan feliz con algo tan simple. Lo recomiendo, sin
-              dudas."
-            </h5>
+      <div class="row mt-2">
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda5.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
+              <a href="./pages/producto.html">
+                <h5 class="card-title">Kit sensorial</h5>
+              </a>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
 
-    <footer>
-      <nav>
-        <ul class="d-flex align-items-center justify-content-around">
-          <li><a href="./index.html">Accesibilidad</a></li>
-          <li><a href="./index.html">Privacidad</a></li>
-          <li><a href="./pages/contacto.html">Contacto</a></li>
-          
-          <li><a href="./index.html">Botón de arrepentimiento</a></li>
-          <li><a href="./index.html">Envíos</a></li>
-          <li><a href="./index.html">Ayuda</a></li>
-          
-        </ul>
-      </nav>
-    </footer>
-    <script src="./scripts/menu.js"></script>
-  </body>
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda6.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
+              <a href="./pages/producto.html">
+                <h5 class="card-title">Kit muñeco</h5>
+              </a>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda7.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
+              <a href="./pages/producto.html">
+                <h5 class="card-title">Kit geometría</h5>
+              </a>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-1 tarjeta-producto">
+          <div class="card h-80 border-0">
+            <a href="./pages/producto.html">
+              <img src="./imgs/tienda1.png" alt="producto en venta" class="card-img-top mt-3" />
+            </a>
+            <div class="card-body">
+              <a href="./pages/producto.html">
+                <h5 class="card-title">Kit libre juego</h5>
+              </a>
+              <p class="card-text">
+                <strong>$9999</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-10 mx-auto">
+        <h2 class="text-center my-4">Nuestros Clientes</h2>
+      </div>
+    </div>
+
+    <div class="container mt-2 mb-2">
+  <div class="row mt-3 align-items-center">
+    <div class="col-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
+      <img class="clientes" src="./imgs/cliente1a.png" alt="Opinion de Messi" />
+    </div>
+    <div class="col-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
+      <h5 class="opiniones ">
+            "Le compré el kit sensorial a mi hijo y la verdad es que le
+            encantó. Es lindo ver cómo se divierte con cosas simples, como las
+            de antes. La calidad es muy buena y se nota que está hecho con
+            cuidado. Lo recomiendo para los que quieren regalar algo
+            especial."
+         </h5>
+    </div>
+  </div>
+
+  <div class="row mt-3 align-items-center">
+    <div class="col-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
+      <img class="clientes" src="./imgs/cliente2a.png" alt="Opinion de Fideo" />
+    </div>
+    <div class="col-12 col-lg-6 mb-4 d-flex flex-column align-items-center">
+      <h5 class="opiniones">
+            "Le regalé la camarita a mi nena y le fascinó. No se despegó en
+            todo el día, nos dibujó en sus fotos a todos. Está bien hecha y
+            muy original, se nota que está pensada para los chicos. Me puso
+            contento verla tan feliz con algo tan simple. Lo recomiendo, sin
+            dudas."
+          </h5>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <nav>
+      <ul class="d-flex align-items-center justify-content-around">
+        <li><a href="./index.html">Accesibilidad</a></li>
+        <li><a href="./index.html">Privacidad</a></li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+
+        <li><a href="./index.html">Botón de arrepentimiento</a></li>
+        <li><a href="./index.html">Envíos</a></li>
+        <li><a href="./index.html">Ayuda</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="./scripts/menu.js"></script>
+</body>
+
 </html>
