@@ -16,7 +16,6 @@
     <!-- css -->
     <link rel="stylesheet" href="../styles/styles.css" />
 
-    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -32,7 +31,7 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header-responsive">
       <!-- Botón hamburguesa -->
       <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
 
@@ -45,13 +44,15 @@
               alt="Isotipo de Tremendo!"
             />
           </div>
-          <div class="col-9 mx-auto">
+          <div class="col-7 mx-auto">
             <h1 class="text-center logotipo">TREMENDO!</h1>
           </div>
-            
-              </div>
+          <div class="espacio col-2 mx-auto"></div>
+        </div>
 
-        <div class="col-md-7 col-sm-11 mt-3 mx-auto img-fluid">
+        <div
+          class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around"
+        >
           <input class="form-control rounded mb-2" />
         </div>
       </div>
@@ -66,7 +67,7 @@
             <a href="./tienda.html">PRODUCTOS</a>
           </li>
           <li class="mx-3 nav-item">
-            <a href="./nosotros.html"><b>NOSOTROS</b></a>
+            <a href="./nosotros.html">NOSOTROS</a>
           </li>
           <li class="mx-3 nav-item">
             <a href="./promociones.html">PROMOCIONES</a>
@@ -80,33 +81,37 @@
 
     <main>
       <div class="row mx-3 justify-content-around">
-        <div class="col-md-5 mt-3 mb-3 col-sm-11 text-center ">
-          <img  class="img-fluid" src="../imgs/nosotros.png" alt=" Foto juguetería" />
+        <div class="col-md-5 mt-3 col-sm-11 justify-content-around text-center">
+          <img
+            class="img-fluid"
+            src="../imgs/nosotros.png"
+            alt=" Foto juguetería"
+          />
         </div>
-<div class="col-md-1 col-sm-0 "></div>
-        <div class=" col-md-6 mt-3 col-sm-11 text-justify">
+
+        <div class="col-md-6 mt-3 mb-4 col-sm-11 text-justify">
           <h4>
-            <br><br>
+            
             Somos un pequeño equipo de artesanos y soñadores que cree que los
             juguetes pueden ser algo más que entretenimiento: pueden ser puentes
             entre generaciones, herramientas de aprendizaje y recuerdos
             imborrables.
-            <br><br>
-            Nuestro taller abrió sus puertas hace más de diez años,
-            inspirado en los juguetes que nuestros abuelos nos contaban que
-            tenían (hechos a mano, con materiales nobles y pensados para durar).
-            <br><br>
+            <br /><br />
+            Nuestro taller abrió sus puertas hace más de diez años, inspirado en
+            los juguetes que nuestros abuelos nos contaban que tenían (hechos a
+            mano, con materiales nobles y pensados para durar).
+            <br /><br />
             Cada pieza que creamos está diseñada, cortada, lijada y pintada a
             mano, utilizando exclusivamente madera de origen responsable y
             pinturas ecológicas, no tóxicas y seguras para los más chicos.
-            <br><br>
+            <br /><br />
             Creemos en una infancia más lenta, más creativa y más conectada con
             la naturaleza. Por eso, no producimos en masa: cada juguete que sale
             de nuestro taller lleva una historia, un cuidado y una intención.
-<br>
-<br>
-<br>
+            <br />
+            <br />
             Gracias por permitirnos ser parte del juego.
+            <br />
           </h4>
         </div>
       </div>
@@ -114,23 +119,17 @@
 
     <footer>
       <nav>
-        <ul class="mt-3 d-flex align-items-center justify-content-around">
+        <ul class="d-flex align-items-center justify-content-around">
           <li><a href="../index.html">Accesibilidad</a></li>
           <li><a href="../index.html">Privacidad</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+
           <li><a href="../index.html">Botón de arrepentimiento</a></li>
-          <li><a href="../index.html">Ayuda</a></li>
           <li><a href="../index.html">Envíos</a></li>
-          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="../index.html">Ayuda</a></li>
         </ul>
       </nav>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    
+    <script src="../scripts/menu.js"></script>
   </body>
 </html>
-
