@@ -233,6 +233,16 @@ h3 {
   font-size: large;
 }
 
+.btn {
+  border: solid 3px hsl(165, 85%, 38%);
+  color: hsl(60, 71%, 99%);
+  background-color: hsl(165, 85%, 38%);
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+}
+
 .opiniones {
   display: flex;
   align-items: center;

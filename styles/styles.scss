@@ -251,6 +251,17 @@ h3 {
   font-size: large;
 }
 
+.btn{
+  border: solid 3px $verde-tremendo;
+color: $blanquito;
+  background-color: $verde-tremendo;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  
+}
+
 .opiniones {
  
   display: flex;
