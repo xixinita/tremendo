@@ -31,69 +31,77 @@
     />
   </head>
   <body>
-   <header class="header-responsive">
-    <!-- Botón hamburguesa -->
-    <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
+    <header class="header-responsive">
+      <!-- Botón hamburguesa -->
+      <button class="menu-toggle d-lg-none" aria-label="Abrir menú">☰</button>
 
-    <div class="d-flex row align-items-center justify-content-around mx-auto">
-      <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
-        <div class="col-3 mx-auto">
-          <img class="isotipo mx-auto" src="../imgs/isotipo.png" alt="Isotipo de Tremendo!" />
+      <div class="d-flex row align-items-center justify-content-around mx-auto">
+        <div class="d-flex align-items-center col-sm-11 col-md-5 mt-3 mx-auto">
+          <div class="col-3 mx-auto">
+            <img
+              class="isotipo mx-auto"
+              src="../imgs/isotipo.png"
+              alt="Isotipo de Tremendo!"
+            />
+          </div>
+          <div class="col-7 mx-auto">
+            <h1 class="text-center logotipo">TREMENDO!</h1>
+          </div>
+          <div class="espacio col-2 mx-auto"></div>
         </div>
-        <div class="col-7 mx-auto">
-          <h1 class="text-center logotipo">TREMENDO!</h1>
+
+        <div
+          class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around"
+        >
+          <input class="form-control rounded mb-2" />
         </div>
-        <div class="espacio col-2 mx-auto"></div>
       </div>
 
-      <div class="col-md-7 col-sm-10 mt-3 mx-auto img-fluid justify-content-around">
-        <input class="form-control rounded mb-2" />
-      </div>
-    </div>
-
-    <!-- Menú -->
-    <nav class="menu">
-      <ul class="nav mt-2 justify-content-around mb-2">
-        <li class="mx-3 nav-item">
-          <a href="../index.html">HOME</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./tienda.html"><b>PRODUCTOS</b></a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./nosotros.html">NOSOTROS</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./promociones.html">PROMOCIONES</a>
-        </li>
-        <li class="mx-3 nav-item">
-          <a href="./contacto.html">CONTACTO</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+      <!-- Menú -->
+      <nav class="menu">
+        <ul class="nav mt-2 justify-content-around mb-2">
+          <li class="mx-3 nav-item">
+            <a href="../index.html">HOME</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./tienda.html"><b>PRODUCTOS</b></a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./promociones.html">PROMOCIONES</a>
+          </li>
+          <li class="mx-3 nav-item">
+            <a href="./contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
+      <div class="container row d-flex justify-content-around mx-auto">
+        <div class="filtros col-lg-3 mt-3 col-sm-12 text-center">
+          <h2 class="text-center mx-auto">FILTROS</h2>
+          <br />
 
- <div class="container row justify-content-center">
-       <div class="filtros col-lg-3 mt-3 col-sm-12 text-center">
-          <h2 class=" text-center mx-auto" >FILTROS</h2><br>
-                 
-          <h4 class=" text-center mx-auto">Ordenar por:</h4>
-          <button id="orden-asc" class="btn d-block mx-auto btn-sm mb-2">Precio ascendente</button>
-          <button id="orden-desc" class="btn d-block mx-auto btn-sm mb-2">Precio descendente</button>
-        <br>
-        
+          <h4 class="text-center mx-auto">Ordenar por:</h4>
+          <button id="orden-asc" class="btn d-block mx-auto btn-sm mb-2">
+            Precio ascendente
+          </button>
+          <button id="orden-desc" class="btn d-block mx-auto btn-sm mb-2">
+            Precio descendente
+          </button>
+          <br />
         </div>
-        
-      </div>
 
-
-     
         <div class="col-lg-9 col-sm-12">
-          <div class="container d-block ">
-           <div class="row mt-5"> 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="15000" >
+          <div class="container d-block">
+            <div class="row mt-5 justify-content-around">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="15000"
+              >
                 <div class="card border-0">
                   <a href="./producto.html">
                     <img
@@ -113,7 +121,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="20000">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="20000"
+              >
                 <div class="card border-0">
                   <a href="./producto.html">
                     <img
@@ -133,8 +144,11 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="12000" >
-                <div class="card  border-0">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="12000"
+              >
+                <div class="card border-0">
                   <a href="./producto.html">
                     <img
                       src="../imgs/tienda3.png"
@@ -153,7 +167,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="18000" >
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="18000"
+              >
                 <div class="card h-100 border-0">
                   <a href="./producto.html">
                     <img
@@ -172,8 +189,11 @@
                   </div>
                 </div>
               </div>
-           
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="17000" >
+
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="17000"
+              >
                 <div class="card h-100 border-0">
                   <a href="./producto.html">
                     <img
@@ -193,7 +213,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="9000">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="9000"
+              >
                 <div class="card h-100 border-0">
                   <a href="./producto.html">
                     <img
@@ -213,7 +236,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="10000">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="10000"
+              >
                 <div class="card h-100 border-0">
                   <a href="./producto.html">
                     <img
@@ -233,7 +259,10 @@
                 </div>
               </div>
 
-              <div class="col-md-4 col-sm-6 mb-6 tarjeta-producto" data-precio="7500">
+              <div
+                class="col-md-4 col-sm-6 mb-6 tarjeta-producto"
+                data-precio="7500"
+              >
                 <div class="card h-100 border-0">
                   <a href="./producto.html">
                     <img
@@ -255,22 +284,21 @@
             </div>
           </div>
         </div>
-
-       
+      </div>
     </main>
 
     <footer>
-       <nav>
-      <ul class="d-flex align-items-center justify-content-around">
-        <li><a href="../index.html">Accesibilidad</a></li>
-        <li><a href="../index.html">Privacidad</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
+      <nav>
+        <ul class="d-flex align-items-center justify-content-around">
+          <li><a href="../index.html">Accesibilidad</a></li>
+          <li><a href="../index.html">Privacidad</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
 
-        <li><a href="../index.html">Botón de arrepentimiento</a></li>
-        <li><a href="../index.html">Envíos</a></li>
-        <li><a href="../index.html">Ayuda</a></li>
-      </ul>
-    </nav>
+          <li><a href="../index.html">Botón de arrepentimiento</a></li>
+          <li><a href="../index.html">Envíos</a></li>
+          <li><a href="../index.html">Ayuda</a></li>
+        </ul>
+      </nav>
     </footer>
     <script src="../scripts/menu.js"></script>
     <script src="../scripts/tienda.js"></script>

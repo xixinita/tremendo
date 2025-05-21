@@ -65,7 +65,11 @@ main {
 .espacio {
   display: none;
 }
+.container{
+   width: 100%;
 
+  height: auto;
+}
 .menu-toggle {
   display: none;
   background: none;
@@ -108,10 +112,16 @@ main {
 }
 
 // .......... main ..........
+
+
 .carousel-indicators {
-  list-style: none; /* Elimina los números de la lista */
-  padding: 0; /* Elimina el espacio adicional */
-  margin: 0; /* Ajusta el margen */
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+
+  width: 100%;
+
+  height: auto;
 }
 
 .tarjeta-producto {
@@ -208,7 +218,11 @@ main {
   }
 }
 
-
+.text-center{
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
 .prod-miniatura {
   @extend .prod-grande;
   justify-content: space-between;
